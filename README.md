@@ -226,10 +226,7 @@ get_vendor(device)
 
 ### Example: List USB Devices
 
-*The following example, is the equivalent of doing `python mount.py` in the terminal.*
-
-vs `sudo python mount.py`
-
+*The following example, is the equivalent of doing `sudo python -m mount` in the terminal.*
 
 ```python
 import os
