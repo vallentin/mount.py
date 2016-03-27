@@ -11,8 +11,10 @@ running [Raspbian GNU/Linux](http://raspbian.org/).*
 
 **Advice:** It isn't optimal, but I would highly advice to mount and unmount devices when
 working with them, or at least just frequently unmount devices if they haven't been used
-for some time. As forgetting to unmount a drive, before pulling it out can result in
-a *broken* drive.
+for some time. As forgetting to unmount a device, before pulling it out can result in
+a corrupt device. The same goes for when manually selecting a directory name when mounting.
+Don't try and mount multiple devices to the same directory, it can as well corrupt
+and wipe the connected device(s).
 
 
 ## Install
