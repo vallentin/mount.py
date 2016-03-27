@@ -2,15 +2,15 @@
 # mount.py
 
 [mount.py][mount.py] is a simple, small and self-contained [Python][Python] **only** module,
-for listing, mounting and unmounting media drives on Linux.
+for listing, mounting and unmounting media devices on Linux.
 
 *[mount.py][mount.py] is developed and tested using Python 3.5.1.
 It was initially developed for and tested on a
 [Raspberry Pi Model B+](https://www.raspberrypi.org/products/model-b-plus/)
 running [Raspbian GNU/Linux](http://raspbian.org/).*
 
-**Advice:** It isn't optimal, but I would highly advice to mount and unmount drives when
-working with them, or at least just frequently unmount drives if they haven't been used
+**Advice:** It isn't optimal, but I would highly advice to mount and unmount devices when
+working with them, or at least just frequently unmount devices if they haven't been used
 for some time. As forgetting to unmount a drive, before pulling it out can result in
 a *broken* drive.
 
@@ -72,15 +72,15 @@ $ sudo python -m mount
 Internally [mount.py][mount.py] relies on `os.system()` calls, which in
 turn some require [superuser][superuser] access.
 
-When listing media drives [mount.py][mount.py] queries and parses `/proc/partitions`.
+When listing media devices [mount.py][mount.py] queries and parses `/proc/partitions`.
 When getting partitions `fdisk` is queried. Last for not least `mkdir` and `mount` is used
 for mounting, follow by `umount` used for unmounting.
 
 
 ## Examples
 
-- [List USB Drives](#example-list-usb-drives)
-- [List Files on USB Drives](#example-list-files-on-usb-drives)
+- [List USB Devices](#example-list-usb-devices)
+- [List Files on USB Devices](#example-list-files-on-usb-devices)
 - [Write to USB](#example-write-to-usb)
 - [Read from USB](#example-read-from-usb)
 - [Detect USB Connections](#example-detect-usb-connections)
@@ -222,7 +222,7 @@ get_vendor(device)
 ## Examples
 
 
-### Example: List USB Drives
+### Example: List USB Devices
 
 *The following example, is the equivalent of doing `python mount.py` in the terminal.*
 
@@ -265,7 +265,7 @@ Vendor: Generic-
 ```
 
 
-### Example: List Files on USB Drives
+### Example: List Files on USB Devices
 
 ```python
 import os
