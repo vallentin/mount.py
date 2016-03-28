@@ -68,6 +68,8 @@ can simply be done by doing:
 $ sudo python -m mount
 ```
 
+*The output is the same as the [List USB Devices example](#example-list-usb-devices).*
+
 
 ## How does it work?
 
