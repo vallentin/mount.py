@@ -54,8 +54,11 @@ def get_media_path(device):
 def get_partition(device):
 	os.system("fdisk -l %s > output" % device)
 	with open("output", "r") as f:
-		data = f.read()
-		return data.split("\n")[-2].split()[0].strip()
+		# make a list of lines which arn't empty
+		data = [line for line in f.readlines() if line.strip()]
+		# take the last partition in the fdisk partition table printout.
+		data = data[-1].split()[0]
+		return data
 
 
 def is_mounted(device):
