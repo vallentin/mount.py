@@ -69,10 +69,18 @@ def get_media_path(device):
         for line in f:
             data = line.split ()
             if  device in data[0] or device == data[2]:
-                os.remove ("output")
+                try:
+                    os.remove ("output")
+                except:
+                    # busy error occurred
+                    pass
                 return data[2]
     # device not mounted:
-    os.remove ("output")
+    try:
+        os.remove ("output")
+    except:
+        # busy error occurred
+        pass
     return "/media/" + device + "1"
     
 
