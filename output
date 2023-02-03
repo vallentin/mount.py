@@ -1,0 +1,3 @@
+Printing mounted removable devices:
+/dev/sdb1 on /media/gunther/GS-32 type vfat (rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,showexec,utf8,flush,errors=remount-ro)
+To get a short help, run pmount -h
