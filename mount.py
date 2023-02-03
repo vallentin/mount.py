@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Author: Gunther Seiser <gunther.seiser.63@gmail.com>
-# on the basis of Christian Vallentin <mail@vallentinsource.com>
+# Author: Christian Vallentin <mail@vallentinsource.com>
 # Website: http://vallentinsource.com
 # Repository: https://github.com/MrVallentin/mount.py
 #
